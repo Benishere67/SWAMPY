@@ -12,6 +12,9 @@ int currentBrightness = 255; // Current brightness for LEDs
 int GivenBrightness = 255;
 int currentToBlack = 25;
 
+bool mode1 = true;
+bool mode2 = false;
+
 int currentLED = 0; // Tracks the current LED position
 bool increasing = true; // Direction indicator: true if forward, false if backward
 
@@ -62,10 +65,33 @@ void loop() {
   currentBrightness = GivenBrightness;
 }
 
+// void receiveEvent(int howMany) {
+//   //Serial.println("incoming data");
+//   while (1 < Wire.available()) {
+//   }
+//   int x = Wire.read();    // receive byte as an integer
+//   GivenBrightness = x;
+// }
+
+
 void receiveEvent(int howMany) {
-  //Serial.println("incoming data");
-  while (1 < Wire.available()) {
+  if(howMany >= 3) {
+    char c = Wire.read(); // Receive byte as a character
+    mode1 = (c== '1');
+    c = Wire.read();
+    mode2 = (c== '1');
+
+    String briStr;
+    while (Wire.available()) {
+      c = Wire.read();
+      briStr+= c;
+    }
+
+    GivenBrightness = briStr.toInt();
   }
-  int x = Wire.read();    // receive byte as an integer
-  GivenBrightness = x;
+
+
+
+  //int x = Wire.read(); // Receive byte
+  //Serial.println(x); // Print the byte
 }

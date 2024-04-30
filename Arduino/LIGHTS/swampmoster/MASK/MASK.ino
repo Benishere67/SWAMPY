@@ -11,6 +11,9 @@ CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 int GivenBrightness = 100;
 bool adder = false;
 
+bool mode1 = true;
+bool mode2 = false;
+
 void setup() {
   
   FastLED.addLeds<NEOPIXEL, 3>(leds[0], NUM_LEDS_PER_STRIP);
@@ -42,13 +45,29 @@ void loop() {
   }
 }
 
+// void receiveEvent(int howMany) {
+//   Serial.println("incoming data");
+//   while (1 < Wire.available()) {
+//   }
+//   int x = Wire.read();    // receive byte as an integer
+//   GivenBrightness = x;
+// }
+
 void receiveEvent(int howMany) {
-  Serial.println("incoming data");
-  while (1 < Wire.available()) {
+  if(howMany >= 3) {
+    char c = Wire.read(); // Receive byte as a character
+    mode1 = (c== '1');
+    c = Wire.read();
+    mode2 = (c== '1');
+
+    String briStr;
+    while (Wire.available()) {
+      c = Wire.read();
+      briStr+= c;
+    }
+
+    GivenBrightness = briStr.toInt();
   }
-  int x = Wire.read();    // receive byte as an integer
-  GivenBrightness = x;
-}
 
 void FullLight(){
   for(int i = 0; i <= 9; i++) {

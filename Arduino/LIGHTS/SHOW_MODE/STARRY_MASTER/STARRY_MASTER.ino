@@ -12,6 +12,9 @@
 int GlobalB = 255;
 int DelayDelay = 0;
 
+bool mode1 = true;
+bool mode2 = false;
+
 CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 
 uint8_t DATA = 1;
@@ -52,13 +55,18 @@ void shootingStar(){
 
 void loop() {
 
-  if(DelayDelay >= 10){
+  if(DelayDelay >= 15){
+
+    String message = String(mode1) + String(mode2) + String(GlobalB)
+
     Wire.beginTransmission(DRED_SLAVE_ADDR);
-    Wire.write(GlobalB);
+    Wire.write(message.c_str(), message.length());
+    // Wire.write(GlobalB);
     Wire.endTransmission();
 
     Wire.beginTransmission(MASK_SLAVE_ADDR);
-    Wire.write(GlobalB);
+    Wire.write(message.c_str(), message.length());
+    // Wire.write(GlobalB);
     Wire.endTransmission();
     DelayDelay = 0;
   }else{
