@@ -4,6 +4,10 @@
 #define NUM_LEDS_PER_STRIP 8
 CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 
+
+
+//MAIN DREADLOCK arduino nano code [BENJI]
+
 int currentBrightness = 255; // Current brightness for LEDs
 int GivenBrightness = 255;
 int currentToBlack = 25;

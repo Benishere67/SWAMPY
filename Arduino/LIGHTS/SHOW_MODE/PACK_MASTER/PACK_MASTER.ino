@@ -4,6 +4,7 @@
 #define NUM_LEDS_PER_STRIP 8
 CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 
+//simple LED zone test for MASTER arduino, NOT stable currently
 
 //set slave address
 #define DRED_SLAVE_ADDR 9

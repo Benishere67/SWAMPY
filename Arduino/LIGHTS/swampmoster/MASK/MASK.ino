@@ -4,6 +4,8 @@
 #define NUM_LEDS_PER_STRIP 4
 CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 
+// the ONLY current mask code, stable.
+
 
 
 int GivenBrightness = 100;

@@ -4,6 +4,8 @@
 #define NUM_LEDS_PER_STRIP 8
 CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 
+//OLD dred code
+
 
 int LEDBRIGHTNESS = 100;
 int GivenBrightness = 100;
