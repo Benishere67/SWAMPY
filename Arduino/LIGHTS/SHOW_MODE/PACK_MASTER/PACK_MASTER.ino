@@ -15,7 +15,25 @@ CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 
 //for shooting start<<>>
 uint8_t DATA = 1;
+
+
+
+//light effect program variables
 bool ToF = true;
+int Aspec;
+int Bspec;
+int Cspec;
+int Dspec;
+
+bool Abspec = false;
+bool Bbspec = false;
+bool Cbspec = false;
+bool Dbspec = false;
+
+int climbZ;
+int climbX;
+int climbV;
+
 
 int DelayDelay = 0;
 int GlobalB = 100;
@@ -56,6 +74,65 @@ void shootingStar(){
     }else if(ToF == false){
       DATA--;
     }
+}
+
+
+void junglevibe(){
+
+  if (Aspec >= 75) {
+    Abspec = !Abspec;
+  }
+  if (Bspec >= 100) {
+    Bbspec = !Bbspec;
+  }
+  if (Cspec >= 190) {
+    Cbspec = !Cbspec;
+  }
+  if (Dspec >= 255) {
+    Dbspec = !Dbspec;
+  }
+
+  if (Aspec <= 0) {
+    Abspec = !Abspec;
+  }
+  if (Bspec <= 75) {
+    Bbspec = !Bbspec;
+  }
+  if (Cspec <= 100) {
+    Cbspec = !Cbspec;
+  }
+  if (Dspec <= 190) {
+    Dbspec = !Dbspec;
+  }
+
+  climbZ = random(0,63)
+  climbX = random(63,166)
+  climbV = random(166,255)
+
+  if(Abspec == true){
+    Aspec-=climbZ;
+  } else{
+    Aspec+=climbX;
+  }
+  if(Bbspec == true){
+    Bspec-=climbX;
+  } else{
+    Bspec+=climbV;
+  }
+  if(Cbspec == true){
+    Cspec--climbV;
+  } else{
+    Cspec+=climbX;
+  }
+  if(Dbspec == true){
+    Dspec-=climbX;
+  } else{
+    Dspec+=climbZ;
+  }
+
+
+
+  
 }
 
 void loop() {

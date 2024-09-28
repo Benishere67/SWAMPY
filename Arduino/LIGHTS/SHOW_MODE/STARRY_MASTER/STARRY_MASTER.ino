@@ -24,6 +24,14 @@ void setup() {
 
   Serial.begin(9600);
 
+  //G3
+
+
+
+  //G4
+  
+
+
   //G5
   FastLED.addLeds<NEOPIXEL, 27>(leds[0], NUM_LEDS_PER_STRIP);
   FastLED.addLeds<NEOPIXEL, 29>(leds[1], NUM_LEDS_PER_STRIP);
@@ -34,6 +42,7 @@ void setup() {
   FastLED.addLeds<NEOPIXEL, 26>(leds[3], NUM_LEDS_PER_STRIP);
   FastLED.addLeds<NEOPIXEL, 28>(leds[4], NUM_LEDS_PER_STRIP);
   FastLED.addLeds<NEOPIXEL, 30>(leds[5], NUM_LEDS_PER_STRIP);
+
 
 
   Wire.begin();

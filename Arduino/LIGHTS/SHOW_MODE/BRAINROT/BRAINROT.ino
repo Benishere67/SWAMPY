@@ -4,7 +4,7 @@
 #define NUM_LEDS_PER_STRIP 8
 CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 
-
+//mask code
 
 //MAIN DREADLOCK arduino nano code [BENJI]
 
