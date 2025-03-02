@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Arduino -->
+  <rect x="550" y="200" width="200" height="300" fill="#429bdb" stroke="black" stroke-width="2"/>
+  <text x="650" y="230" text-anchor="middle" font-family="Arial" font-size="20" fill="white">Arduino</text>
+  
+  <!-- Analog Input Pin -->
+  <circle cx="550" cy="300" r="5" fill="black"/>
+  <text x="535" y="300" text-anchor="end" font-family="Arial" font-size="14">A0</text>
+  
+  <!-- VCC Pin -->
+  <circle cx="550" cy="250" r="5" fill="red"/>
+  <text x="535" y="250" text-anchor="end" font-family="Arial" font-size="14">5V</text>
+  
+  <!-- GND Pin -->
+  <circle cx="550" cy="350" r="5" fill="black"/>
+  <text x="535" y="350" text-anchor="end" font-family="Arial" font-size="14">GND</text>
+  
+  <!-- Glove -->
+  <ellipse cx="200" cy="300" rx="150" ry="200" fill="#333333" stroke="black" stroke-width="2"/>
+  
+  <!-- Fingers -->
+  <circle cx="150" cy="150" r="15" fill="#c0c0c0" stroke="black" stroke-width="2"/>
+  <text x="150" y="130" text-anchor="middle" font-family="Arial" font-size="14">Index</text>
+  
+  <circle cx="200" cy="130" r="15" fill="#c0c0c0" stroke="black" stroke-width="2"/>
+  <text x="200" y="110" text-anchor="middle" font-family="Arial" font-size="14">Middle</text>
+  
+  <circle cx="250" cy="130" r="15" fill="#c0c0c0" stroke="black" stroke-width="2"/>
+  <text x="250" y="110" text-anchor="middle" font-family="Arial" font-size="14">Ring</text>
+  
+  <circle cx="300" cy="150" r="15" fill="#c0c0c0" stroke="black" stroke-width="2"/>
+  <text x="300" y="130" text-anchor="middle" font-family="Arial" font-size="14">Pinky</text>
+  
+  <!-- Thumb -->
+  <circle cx="120" cy="250" r="15" fill="#ffffcc" stroke="black" stroke-width="2"/>
+  <text x="120" y="230" text-anchor="middle" font-family="Arial" font-size="14">Thumb</text>
+  
+  <!-- Resistors -->
+  <line x1="150" y1="150" x2="300" y2="250" stroke="red" stroke-width="2"/>
+  <rect x="230" y="190" width="40" height="20" fill="beige" stroke="black" stroke-width="1" transform="rotate(32 230 190)"/>
+  <text x="250" y="180" text-anchor="middle" font-family="Arial" font-size="14" transform="rotate(32 250 180)">1kΩ</text>
+  
+  <line x1="200" y1="130" x2="350" y2="260" stroke="orange" stroke-width="2"/>
+  <rect x="290" y="180" width="40" height="20" fill="beige" stroke="black" stroke-width="1" transform="rotate(40 290 180)"/>
+  <text x="310" y="170" text-anchor="middle" font-family="Arial" font-size="14" transform="rotate(40 310 170)">3.3kΩ</text>
+  
+  <line x1="250" y1="130" x2="400" y2="270" stroke="green" stroke-width="2"/>
+  <rect x="340" y="180" width="40" height="20" fill="beige" stroke="black" stroke-width="1" transform="rotate(48 340 180)"/>
+  <text x="360" y="170" text-anchor="middle" font-family="Arial" font-size="14" transform="rotate(48 360 170)">10kΩ</text>
+  
+  <line x1="300" y1="150" x2="450" y2="280" stroke="blue" stroke-width="2"/>
+  <rect x="390" y="200" width="40" height="20" fill="beige" stroke="black" stroke-width="1" transform="rotate(48 390 200)"/>
+  <text x="410" y="190" text-anchor="middle" font-family="Arial" font-size="14" transform="rotate(48 410 190)">22kΩ</text>
+  
+  <!-- Pull-down resistor -->
+  <line x1="120" y1="250" x2="120" y2="350" stroke="black" stroke-width="2"/>
+  <rect x="120" y="300" width="40" height="20" fill="beige" stroke="black" stroke-width="1" transform="rotate(90 120 300)"/>
+  <text x="150" y="310" text-anchor="middle" font-family="Arial" font-size="14">10kΩ</text>
+  
+  <!-- Connections to Arduino -->
+  <line x1="500" y1="250" x2="550" y2="250" stroke="red" stroke-width="2"/>
+  <line x1="120" y1="350" x2="550" y2="350" stroke="black" stroke-width="2"/>
+  <line x1="120" y1="250" x2="550" y2="300" stroke="purple" stroke-width="2"/>
+  
+  <!-- Connections to VCC -->
+  <line x1="300" y1="250" x2="500" y2="250" stroke="red" stroke-width="2"/>
+  <line x1="350" y1="260" x2="500" y2="250" stroke="red" stroke-width="2"/>
+  <line x1="400" y1="270" x2="500" y2="250" stroke="red" stroke-width="2"/>
+  <line x1="450" y1="280" x2="500" y2="250" stroke="red" stroke-width="2"/>
+  
+  <!-- Legend -->
+  <text x="650" y="430" font-family="Arial" font-size="16" font-weight="bold">Expected Readings:</text>
+  <text x="650" y="460" font-family="Arial" font-size="14">Index: ~4.5V</text>
+  <text x="650" y="485" font-family="Arial" font-size="14">Middle: ~3.8V</text>
+  <text x="650" y="510" font-family="Arial" font-size="14">Ring: ~2.5V</text>
+  <text x="650" y="535" font-family="Arial" font-size="14">Pinky: ~1.5V</text>
+</svg>

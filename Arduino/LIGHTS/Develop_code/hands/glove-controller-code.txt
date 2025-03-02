@@ -1,0 +1,99 @@
+const int thumbPin = A0;  // Analog input pin that the thumb is connected to
+
+// Voltage thresholds for finger detection
+const int indexThreshold = 900;    // ~4.5V (higher threshold)
+const int middleThreshold = 750;   // ~3.7V
+const int ringThreshold = 500;     // ~2.5V
+const int pinkyThreshold = 300;    // ~1.5V (lower threshold)
+
+// Tolerance for reading values (to account for variations)
+const int tolerance = 50;
+
+// Variables to store the current and previous states
+int currentFinger = 0;  // 0=none, 1=index, 2=middle, 3=ring, 4=pinky
+int lastFinger = 0;
+
+void setup() {
+  Serial.begin(9600);  // Initialize serial communication
+  Serial.println("Smart Glove Controller Initialized");
+  
+  // You could initialize output pins here if you want LEDs or other indicators
+  // pinMode(2, OUTPUT);  // Example output for index finger action
+  // pinMode(3, OUTPUT);  // Example output for middle finger action
+  // pinMode(4, OUTPUT);  // Example output for ring finger action
+  // pinMode(5, OUTPUT);  // Example output for pinky finger action
+}
+
+void loop() {
+  // Read the analog value from the thumb
+  int thumbValue = analogRead(thumbPin);
+  
+  // Determine which finger is being touched based on voltage
+  if (thumbValue >= indexThreshold - tolerance) {
+    currentFinger = 1;  // Index finger
+  } 
+  else if (thumbValue >= middleThreshold - tolerance && thumbValue < indexThreshold - tolerance) {
+    currentFinger = 2;  // Middle finger
+  } 
+  else if (thumbValue >= ringThreshold - tolerance && thumbValue < middleThreshold - tolerance) {
+    currentFinger = 3;  // Ring finger
+  } 
+  else if (thumbValue >= pinkyThreshold - tolerance && thumbValue < ringThreshold - tolerance) {
+    currentFinger = 4;  // Pinky finger
+  } 
+  else {
+    currentFinger = 0;  // No finger touching
+  }
+  
+  // Only trigger actions when the state changes
+  if (currentFinger != lastFinger) {
+    // Debug output
+    Serial.print("Thumb reading: ");
+    Serial.print(thumbValue);
+    Serial.print(" - Finger: ");
+    
+    switch(currentFinger) {
+      case 0:
+        Serial.println("None");
+        // performAction(0);  // No action or reset
+        break;
+      case 1:
+        Serial.println("Index");
+        // performAction(1);  // Action for index finger
+        break;
+      case 2:
+        Serial.println("Middle");
+        // performAction(2);  // Action for middle finger
+        break;
+      case 3:
+        Serial.println("Ring");
+        // performAction(3);  // Action for ring finger
+        break;
+      case 4:
+        Serial.println("Pinky");
+        // performAction(4);  // Action for pinky finger
+        break;
+    }
+    
+    lastFinger = currentFinger;  // Update the last state
+  }
+  
+  delay(50);  // Small delay to avoid excessive readings
+}
+
+// Uncomment and customize this function to perform different actions
+/*
+void performAction(int finger) {
+  // Reset all outputs
+  for (int i = 2; i <= 5; i++) {
+    digitalWrite(i, LOW);
+  }
+  
+  if (finger > 0) {
+    // Activate the corresponding output
+    digitalWrite(finger + 1, HIGH);
+    
+    // Add your custom actions for each finger here
+  }
+}
+*/

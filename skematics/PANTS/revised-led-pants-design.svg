@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="800" fill="#f5f5f5"/>
+  
+  <!-- Labels -->
+  <text x="200" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">FRONT VIEW</text>
+  <text x="600" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">BACK VIEW</text>
+  
+  <!-- Front Pant Leg Outlines -->
+  <path d="M100,100 L300,100 L270,600 L130,600 Z" fill="#ddd" stroke="#333" stroke-width="2"/>
+  
+  <!-- Back Pant Leg Outlines -->
+  <path d="M500,100 L700,100 L670,600 L530,600 Z" fill="#ddd" stroke="#333" stroke-width="2"/>
+  
+  <!-- LEDs Front - Diagonal 1 (Upper left to middle) -->
+  <circle cx="130" cy="150" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="110" y="150" font-family="Arial" font-size="16" text-anchor="end">1</text>
+  
+  <circle cx="160" cy="200" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="140" y="200" font-family="Arial" font-size="16" text-anchor="end">2</text>
+  
+  <circle cx="190" cy="250" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="170" y="250" font-family="Arial" font-size="16" text-anchor="end">3</text>
+  
+  <circle cx="220" cy="300" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="200" y="300" font-family="Arial" font-size="16" text-anchor="end">4</text>
+  
+  <circle cx="240" cy="350" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="220" y="350" font-family="Arial" font-size="16" text-anchor="end">5</text>
+  
+  <!-- Front-to-Back Transition Point -->
+  <rect x="240" y="370" width="80" height="20" fill="#ffcc99" stroke="black" stroke-width="2" rx="5" ry="5"/>
+  <text x="280" y="385" font-family="Arial" font-size="10" text-anchor="middle">To Back</text>
+  
+  <!-- LEDs Back - Diagonal 1 Continuation (middle to bottom) -->
+  <circle cx="530" cy="350" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="510" y="350" font-family="Arial" font-size="16" text-anchor="end">6</text>
+  
+  <circle cx="550" cy="400" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="530" y="400" font-family="Arial" font-size="16" text-anchor="end">7</text>
+  
+  <circle cx="570" cy="450" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="550" y="450" font-family="Arial" font-size="16" text-anchor="end">8</text>
+  
+  <circle cx="590" cy="500" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="570" y="500" font-family="Arial" font-size="16" text-anchor="end">9</text>
+  
+  <circle cx="610" cy="550" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="590" y="550" font-family="Arial" font-size="16" text-anchor="end">10</text>
+  
+  <!-- LEDs Back - Diagonal 2 (lower to upper) -->
+  <circle cx="550" cy="550" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="530" y="550" font-family="Arial" font-size="16" text-anchor="end">11</text>
+  
+  <circle cx="570" cy="500" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="550" y="500" font-family="Arial" font-size="16" text-anchor="end">12</text>
+  
+  <circle cx="590" cy="450" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="570" y="450" font-family="Arial" font-size="16" text-anchor="end">13</text>
+  
+  <circle cx="610" cy="400" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="590" y="400" font-family="Arial" font-size="16" text-anchor="end">14</text>
+  
+  <circle cx="630" cy="350" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="610" y="350" font-family="Arial" font-size="16" text-anchor="end">15</text>
+  
+  <circle cx="650" cy="300" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="630" y="300" font-family="Arial" font-size="16" text-anchor="end">16</text>
+  
+  <circle cx="670" cy="250" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="650" y="250" font-family="Arial" font-size="16" text-anchor="end">17</text>
+  
+  <circle cx="685" cy="200" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="665" y="200" font-family="Arial" font-size="16" text-anchor="end">18</text>
+  
+  <circle cx="690" cy="150" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="670" y="150" font-family="Arial" font-size="16" text-anchor="end">19</text>
+  
+  <!-- Back-to-Front Top Transition -->
+  <rect x="590" y="100" width="80" height="20" fill="#ffcc99" stroke="black" stroke-width="2" rx="5" ry="5"/>
+  <text x="630" y="115" font-family="Arial" font-size="10" text-anchor="middle">To Front</text>
+  
+  <!-- Secondary power at top back -->
+  <rect x="510" y="100" width="60" height="20" fill="#ff9999" stroke="black" stroke-width="2" rx="5" ry="5"/>
+  <text x="540" y="115" font-family="Arial" font-size="10" text-anchor="middle">5V Boost</text>
+  
+  <!-- LEDs Front - Diagonal 2 (top right to bottom) -->
+  <circle cx="270" cy="150" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="290" y="150" font-family="Arial" font-size="16" text-anchor="start">20</text>
+  
+  <circle cx="260" cy="200" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="280" y="200" font-family="Arial" font-size="16" text-anchor="start">21</text>
+  
+  <circle cx="250" cy="250" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="270" y="250" font-family="Arial" font-size="16" text-anchor="start">22</text>
+  
+  <circle cx="230" cy="300" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="250" y="300" font-family="Arial" font-size="16" text-anchor="start">23</text>
+  
+  <circle cx="210" cy="350" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="230" y="350" font-family="Arial" font-size="16" text-anchor="start">24</text>
+  
+  <circle cx="190" cy="400" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="210" y="400" font-family="Arial" font-size="16" text-anchor="start">25</text>
+  
+  <circle cx="170" cy="450" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="190" y="450" font-family="Arial" font-size="16" text-anchor="start">26</text>
+  
+  <circle cx="150" cy="500" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="170" y="500" font-family="Arial" font-size="16" text-anchor="start">27</text>
+  
+  <circle cx="140" cy="550" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="160" y="550" font-family="Arial" font-size="16" text-anchor="start">28</text>
+  
+  <!-- Front Bottom to Back Bottom Transition -->
+  <rect x="190" y="600" width="80" height="20" fill="#ffcc99" stroke="black" stroke-width="2" rx="5" ry="5"/>
+  <text x="230" y="615" font-family="Arial" font-size="10" text-anchor="middle">To Back</text>
+  
+  <!-- LEDs Back - Diagonal 3 (bottom to top) -->
+  <circle cx="540" cy="550" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="560" y="550" font-family="Arial" font-size="16" text-anchor="start">29</text>
+  
+  <circle cx="550" cy="500" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="570" y="500" font-family="Arial" font-size="16" text-anchor="start">30</text>
+  
+  <circle cx="560" cy="450" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="580" y="450" font-family="Arial" font-size="16" text-anchor="start">31</text>
+  
+  <circle cx="570" cy="400" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="590" y="400" font-family="Arial" font-size="16" text-anchor="start">32</text>
+  
+  <circle cx="580" cy="350" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="600" y="350" font-family="Arial" font-size="16" text-anchor="start">33</text>
+  
+  <circle cx="590" cy="300" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="610" y="300" font-family="Arial" font-size="16" text-anchor="start">34</text>
+  
+  <circle cx="600" cy="250" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="620" y="250" font-family="Arial" font-size="16" text-anchor="start">35</text>
+  
+  <circle cx="610" cy="200" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="630" y="200" font-family="Arial" font-size="16" text-anchor="start">36</text>
+  
+  <circle cx="620" cy="150" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="640" y="150" font-family="Arial" font-size="16" text-anchor="start">37</text>
+  
+  <!-- Power and Ground indication for front top -->
+  <rect x="130" y="100" width="60" height="20" fill="#ff9999" stroke="black" stroke-width="2" rx="5" ry="5"/>
+  <text x="160" y="115" font-family="Arial" font-size="10" text-anchor="middle">5V In</text>
+  
+  <!-- Arrow paths for the front diagonal 1 -->
+  <path d="M130,150 L160,200" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M160,200 L190,250" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M190,250 L220,300" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M220,300 L240,350" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M240,350 L280,380" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow for front-to-back transition -->
+  <path d="M280,380 L430,380 L530,350" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow paths for back diagonal 1 continuation -->
+  <path d="M530,350 L550,400" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M550,400 L570,450" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M570,450 L590,500" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M590,500 L610,550" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M610,550 L550,550" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow paths for back diagonal 2 -->
+  <path d="M550,550 L570,500" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M570,500 L590,450" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M590,450 L610,400" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M610,400 L630,350" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M630,350 L650,300" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M650,300 L670,250" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M670,250 L685,200" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M685,200 L690,150" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M690,150 L630,110" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow for back-to-front top transition -->
+  <path d="M630,110 L270,150" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow paths for front diagonal 2 -->
+  <path d="M270,150 L260,200" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M260,200 L250,250" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M250,250 L230,300" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M230,300 L210,350" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M210,350 L190,400" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M190,400 L170,450" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M170,450 L150,500" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M150,500 L140,550" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M140,550 L230,615" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow for front-to-back bottom transition -->
+  <path d="M230,615 L430,615 L540,550" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow paths for back diagonal 3 -->
+  <path d="M540,550 L550,500" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M550,500 L560,450" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M560,450 L570,400" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M570,400 L580,350" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M580,350 L590,300" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M590,300 L600,250" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M600,250 L610,200" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M610,200 L620,150" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="650" width="700" height="120" fill="white" stroke="black" stroke-width="1" rx="10" ry="10"/>
+  <text x="400" y="670" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">LEGEND</text>
+  
+  <circle cx="80" cy="700" r="10" fill="#89CFF0" stroke="black" stroke-width="2"/>
+  <text x="100" y="705" font-family="Arial" font-size="16" text-anchor="start">SK9822 LED</text>
+  
+  <rect x="200" y="690" width="60" height="20" fill="#ff9999" stroke="black" stroke-width="2" rx="5" ry="5"/>
+  <text x="270" y="705" font-family="Arial" font-size="16" text-anchor="start">Power Connection Points</text>
+  
+  <rect x="400" y="690" width="60" height="20" fill="#ffcc99" stroke="black" stroke-width="2" rx="5" ry="5"/>
+  <text x="470" y="705" font-family="Arial" font-size="16" text-anchor="start">Transition Points</text>
+  
+  <line x1="580" y1="700" x2="630" y2="700" stroke="#00aa00" stroke-width="2" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <text x="640" y="705" font-family="Arial" font-size="16" text-anchor="start">Data Flow</text>
+  
+  <text x="100" y="740" font-family="Arial" font-size="14" text-anchor="start">The design creates natural intersecting diagonals without forcing a specific X pattern</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#00aa00"/>
+    </marker>
+  </defs>
+</svg>
