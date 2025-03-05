@@ -4,46 +4,44 @@
 #define DATA_PIN 6
 #define CLOCK_PIN 5
 #define BRIGHTNESS 255
-#define MODE_DURATION 25000  // Switch modes every 10 seconds
+#define MODE_DURATION 15000  // Switch modes every 10 seconds
 
 CRGB leds[NUM_LEDS];
 uint8_t gHue = 0;  // Rotating base color
 bool fastMode = true;
 unsigned long modeTimer = 0;
 
+//SK9822
+
+
+
+
 void setup() {
-  FastLED.addLeds<SK9822, DATA_PIN, CLOCK_PIN, RGB>(leds, NUM_LEDS);
+  FastLED.addLeds<WS2801, DATA_PIN, CLOCK_PIN, RGB>(leds, NUM_LEDS);
   FastLED.setBrightness(BRIGHTNESS);
   randomSeed(analogRead(0));
   modeTimer = millis();
+
 }
 
 void loop() {
-  // Switch modes every MODE_DURATION milliseconds
   if(millis() - modeTimer > MODE_DURATION) {
-    fastMode = !fastMode;
-    modeTimer = millis();
-    FastLED.clear();
-  }
+      fastMode = !fastMode;
+      modeTimer = millis();
+      FastLED.clear();
+    }
 
-  if(fastMode) {
-    wildNightDance();
-  } else {
-    cosmicSerenity();
-  }
-  
-  FastLED.show();
+    if(fastMode) {
+      cosmicSerenity();
+    } else {
+      flowmotion();
+    }
+    
+    FastLED.show();
 }
 
-void wildNightDance() {
-  // Rapid violet/turquoise flashes with white sparks
-  EVERY_N_MILLISECONDS(75) {
-    fadeToBlackBy(leds, NUM_LEDS, 50);
-    leds[random(NUM_LEDS)] = CRGB::White;  // White spark
-    leds[random(NUM_LEDS)] = CHSV(random(160, 224), 255, 255);  // Violet
-    leds[random(NUM_LEDS)] = CHSV(random(96, 128), 255, 200);    // Turquoise
-  }
-}
+
+
 
 void cosmicSerenity() {
   // Slow color waves with gentle pulses
@@ -68,4 +66,25 @@ void cosmicSerenity() {
       leds[(i + 37) % NUM_LEDS] = CHSV(gHue + 0 + (i * 3), 255, cos8(i * 20 + millis()/30) / 2 + 128);
     }
   }
+}
+
+void flowmotion(){
+  EVERY_N_MILLISECONDS(300) {
+    for(int i = 0; i < NUM_LEDS;i++){
+      leds[i] = CRGB::White;
+      for(int o = 0;o<NUM_LEDS;o++){
+        if(o=i){
+        }else{
+          leds[o] = CRGB::MistyRose;
+        }
+      }      
+
+
+
+      FastLED.show();
+      fadeToBlackBy(leds, NUM_LEDS, 25);
+    }
+
+  }
+
 }
