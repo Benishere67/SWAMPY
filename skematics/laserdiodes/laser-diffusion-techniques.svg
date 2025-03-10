@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Laser Diffusion Techniques</text>
+  
+  <!-- 1. Kaleidoscope Effect -->
+  <g transform="translate(160, 150)">
+    <!-- Section Title -->
+    <text x="0" y="-50" font-family="Arial" font-size="18" font-weight="bold">Kaleidoscope Effect</text>
+    
+    <!-- Laser Diode -->
+    <rect x="0" y="0" width="20" height="10" fill="#333" stroke="#000"/>
+    <text x="10" y="30" text-anchor="middle" font-family="Arial" font-size="12">Laser Diode</text>
+    
+    <!-- Mirrors arranged in triangle -->
+    <line x1="30" y1="5" x2="70" y2="5" stroke="red" stroke-width="2"/>
+    <polygon points="70,0 110,40 30,50" fill="none" stroke="#555" stroke-width="2"/>
+    
+    <!-- Laser beams reflecting -->
+    <line x1="70" y1="5" x2="100" y2="35" stroke="red" stroke-width="1" stroke-opacity="0.8"/>
+    <line x1="100" y1="35" x2="40" y2="45" stroke="red" stroke-width="1" stroke-opacity="0.6"/>
+    <line x1="40" y1="45" x2="70" y2="5" stroke="red" stroke-width="1" stroke-opacity="0.4"/>
+    
+    <!-- Second bounce reflections -->
+    <line x1="100" y1="35" x2="70" y2="20" stroke="red" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="2"/>
+    <line x1="40" y1="45" x2="75" y2="40" stroke="red" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="2"/>
+    <line x1="70" y1="5" x2="60" y2="25" stroke="red" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="2"/>
+    
+    <!-- More reflections suggested -->
+    <circle cx="70" cy="25" r="25" fill="none" stroke="red" stroke-width="0.5" stroke-dasharray="2"/>
+  </g>
+  
+  <!-- 2. Conical Diffuser -->
+  <g transform="translate(460, 150)">
+    <!-- Section Title -->
+    <text x="0" y="-50" font-family="Arial" font-size="18" font-weight="bold">Conical Diffuser</text>
+    
+    <!-- Laser Diode -->
+    <rect x="0" y="0" width="20" height="10" fill="#333" stroke="#000"/>
+    <text x="10" y="30" text-anchor="middle" font-family="Arial" font-size="12">Laser Diode</text>
+    
+    <!-- Beam to cone -->
+    <line x1="20" y1="5" x2="90" y2="5" stroke="red" stroke-width="2"/>
+    
+    <!-- Cone -->
+    <polygon points="90,5 120,35 120,-25" fill="none" stroke="#555" stroke-width="2"/>
+    
+    <!-- Diffused beams -->
+    <line x1="90" y1="5" x2="140" y2="35" stroke="red" stroke-width="1" stroke-opacity="0.5"/>
+    <line x1="90" y1="5" x2="145" y2="25" stroke="red" stroke-width="1" stroke-opacity="0.5"/>
+    <line x1="90" y1="5" x2="150" y2="15" stroke="red" stroke-width="1" stroke-opacity="0.5"/>
+    <line x1="90" y1="5" x2="150" y2="5" stroke="red" stroke-width="1" stroke-opacity="0.5"/>
+    <line x1="90" y1="5" x2="150" y2="-5" stroke="red" stroke-width="1" stroke-opacity="0.5"/>
+    <line x1="90" y1="5" x2="145" y2="-15" stroke="red" stroke-width="1" stroke-opacity="0.5"/>
+    <line x1="90" y1="5" x2="140" y2="-25" stroke="red" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  
+  <!-- 3. Compound Diffusion -->
+  <g transform="translate(160, 350)">
+    <!-- Section Title -->
+    <text x="0" y="-30" font-family="Arial" font-size="18" font-weight="bold">Compound Diffusion</text>
+    
+    <!-- Laser Diode -->
+    <rect x="0" y="0" width="20" height="10" fill="#333" stroke="#000"/>
+    <text x="10" y="30" text-anchor="middle" font-family="Arial" font-size="12">Laser Diode</text>
+    
+    <!-- Beam to diffuser -->
+    <line x1="20" y1="5" x2="70" y2="5" stroke="red" stroke-width="2"/>
+    
+    <!-- Diffuser plate -->
+    <rect x="70" y="-15" width="5" height="40" fill="#aaa" stroke="#555"/>
+    <text x="72.5" y="-25" text-anchor="middle" font-family="Arial" font-size="10">Mesh</text>
+    
+    <!-- Diffused beams -->
+    <line x1="75" y1="-10" x2="130" y2="-30" stroke="red" stroke-width="0.8" stroke-opacity="0.7"/>
+    <line x1="75" y1="-5" x2="130" y2="-15" stroke="red" stroke-width="0.8" stroke-opacity="0.7"/>
+    <line x1="75" y1="0" x2="130" y2="0" stroke="red" stroke-width="0.8" stroke-opacity="0.7"/>
+    <line x1="75" y1="5" x2="130" y2="15" stroke="red" stroke-width="0.8" stroke-opacity="0.7"/>
+    <line x1="75" y1="10" x2="130" y2="30" stroke="red" stroke-width="0.8" stroke-opacity="0.7"/>
+    <line x1="75" y1="15" x2="120" y2="40" stroke="red" stroke-width="0.8" stroke-opacity="0.7"/>
+  </g>
+  
+  <!-- 4. Combination Design -->
+  <g transform="translate(460, 350)">
+    <!-- Section Title -->
+    <text x="0" y="-30" font-family="Arial" font-size="18" font-weight="bold">Combined Design</text>
+    
+    <!-- Clear case outline -->
+    <rect x="-10" y="-25" width="170" height="90" rx="5" ry="5" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,2"/>
+    <text x="150" y="80" font-family="Arial" font-size="10" fill="#666">Clear Case</text>
+    
+    <!-- Laser Diode -->
+    <rect x="0" y="0" width="20" height="10" fill="#333" stroke="#000"/>
+    <text x="10" y="30" text-anchor="middle" font-family="Arial" font-size="12">Laser Diode</text>
+    
+    <!-- First mirror (45°) -->
+    <line x1="20" y1="5" x2="50" y2="5" stroke="red" stroke-width="2"/>
+    <line x1="50" y1="-15" x2="50" y2="25" stroke="#555" stroke-width="2"/>
+    
+    <!-- Redirected beam (90°) -->
+    <line x1="50" y1="5" x2="50" y2="-25" stroke="red" stroke-width="2"/>
+    
+    <!-- Second mirror (45°) -->
+    <line x1="30" y1="-25" x2="70" y2="-25" stroke="#555" stroke-width="2"/>
+    
+    <!-- Final beam to conical diffuser -->
+    <line x1="50" y1="-25" x2="95" y2="-25" stroke="red" stroke-width="2"/>
+    
+    <!-- Conical diffuser -->
+    <polygon points="95,-25 110,-10 110,-40" fill="none" stroke="#555" stroke-width="2"/>
+    
+    <!-- Diffused beams -->
+    <line x1="95" y1="-25" x2="130" y2="0" stroke="red" stroke-width="0.8" stroke-opacity="0.6"/>
+    <line x1="95" y1="-25" x2="135" y2="-10" stroke="red" stroke-width="0.8" stroke-opacity="0.6"/>
+    <line x1="95" y1="-25" x2="140" y2="-25" stroke="red" stroke-width="0.8" stroke-opacity="0.6"/>
+    <line x1="95" y1="-25" x2="135" y2="-40" stroke="red" stroke-width="0.8" stroke-opacity="0.6"/>
+    <line x1="95" y1="-25" x2="125" y2="-50" stroke="red" stroke-width="0.8" stroke-opacity="0.6"/>
+    
+    <!-- Diffusion glow suggestion -->
+    <circle cx="95" cy="-25" r="30" fill="none" stroke="red" stroke-width="0.5" stroke-opacity="0.3"/>
+  </g>
+  
+  <!-- Scale reference -->
+  <g transform="translate(350, 520)">
+    <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold">Scale Reference</text>
+    <rect x="0" y="10" width="20" height="10" fill="#333" stroke="#000"/>
+    <text x="30" y="20" font-family="Arial" font-size="12">Laser Diode Size</text>
+    <rect x="0" y="30" width="100" height="50" fill="none" stroke="#888" stroke-dasharray="3,2"/>
+    <text x="110" y="55" font-family="Arial" font-size="12">10x Surface Area</text>
+  </g>
+</svg>

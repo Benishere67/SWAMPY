@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <!-- Background -->
+  <rect width="700" height="500" fill="#f8f8f8"/>
+  
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Minimalist Laser Diode Case</text>
+  
+  <!-- Main Design View -->
+  <g transform="translate(350, 200)">
+    <!-- Actual laser diode size for reference -->
+    <rect x="-25" y="-10" width="50" height="20" fill="#333" stroke="#000"/>
+    <text x="0" y="40" text-anchor="middle" font-family="Arial" font-size="12">Actual Diode Size</text>
+    
+    <!-- Simple case outline - just under 10x size -->
+    <rect x="-70" y="-30" width="140" height="60" rx="5" ry="5" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,1"/>
+    <text x="95" y="0" font-family="Arial" font-size="14">Max Case Boundary</text>
+    
+    <!-- Minimalist case design -->
+    <path d="M -60,-20 L -40,-20 L -40,-25 L 40,-25 L 40,-20 L 60,-20 L 80,0 L 60,20 L 40,20 L 40,25 L -40,25 L -40,20 L -60,20 Z" 
+          fill="#d0e8f0" fill-opacity="0.6" stroke="#333" stroke-width="1.5"/>
+    
+    <!-- Laser beam suggestion -->
+    <line x1="25" y1="0" x2="150" y2="0" stroke="red" stroke-width="2" stroke-opacity="0.8"/>
+  </g>
+  
+  <!-- Cross Section View -->
+  <g transform="translate(350, 350)">
+    <text x="0" y="-70" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Cross-Section View</text>
+    
+    <!-- Case cross-section -->
+    <path d="M -60,-25 L 80,-25 L 80,25 L -60,25 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+    
+    <!-- Semi-translucent zones (lens is part of the case) -->
+    <path d="M 40,-25 L 80,-25 L 80,25 L 40,25 Z" fill="#b0e0e6" fill-opacity="0.5" stroke="#333" stroke-width="0.5"/>
+    <path d="M -60,-25 L -40,-25 L -40,25 L -60,25 Z" fill="#d0e8f0" fill-opacity="0.4" stroke="#333" stroke-width="0.5"/>
+    
+    <!-- Laser diode -->
+    <rect x="-25" y="-10" width="50" height="20" fill="#333" stroke="#000"/>
+    
+    <!-- Terminals suggestion -->
+    <line x1="-25" y1="0" x2="-45" y2="-10" stroke="#666" stroke-width="1"/>
+    <line x1="-25" y1="0" x2="-45" y2="10" stroke="#666" stroke-width="1"/>
+    
+    <!-- Beam path through the case -->
+    <line x1="25" y1="0" x2="40" y2="0" stroke="red" stroke-width="2" stroke-opacity="0.7"/>
+    <path d="M 40,0 Q 60,0 80,0" stroke="red" stroke-width="3" stroke-opacity="0.8"/>
+    <path d="M 80,0 L 120,0" stroke="red" stroke-width="2.5" stroke-opacity="1"/>
+  </g>
+  
+  <!-- Detailed Features -->
+  <g transform="translate(550, 200)">
+    <text x="0" y="0" font-family="Arial" font-size="16" font-weight="bold">Features:</text>
+    <text x="0" y="30" font-family="Arial" font-size="14">1. Compact size (< 10x diode)</text>
+    <text x="0" y="55" font-family="Arial" font-size="14">2. Built-in lens effect</text>
+    <text x="0" y="80" font-family="Arial" font-size="14">3. Terminal protection</text>
+    <text x="0" y="105" font-family="Arial" font-size="14">4. Maintains beam direction</text>
+  </g>
+  
+  <!-- 3D Print Notes -->
+  <g transform="translate(150, 200)">
+    <text x="0" y="0" font-family="Arial" font-size="16" font-weight="bold">Printing Notes:</text>
+    <text x="0" y="30" font-family="Arial" font-size="14">• Print with semi-translucent</text>
+    <text x="0" y="55" font-family="Arial" font-size="14">  filament throughout</text>
+    <text x="0" y="80" font-family="Arial" font-size="14">• Vary wall thickness at front</text>
+    <text x="0" y="105" font-family="Arial" font-size="14">  to create lens effect</text>
+    <text x="0" y="130" font-family="Arial" font-size="14">• Print in two halves for</text>
+    <text x="0" y="155" font-family="Arial" font-size="14">  easy diode insertion</text>
+  </g>
+  
+  <!-- How It Works Section -->
+  <g transform="translate(350, 450)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">How It Works</text>
+    <text x="-150" y="25" font-family="Arial" font-size="14">Thicker front section:</text>
+    <text x="-150" y="45" font-family="Arial" font-size="14">Acts as a natural lens due</text>
+    <text x="-150" y="65" font-family="Arial" font-size="14">to the curved, thicker</text>
+    <text x="-150" y="85" font-family="Arial" font-size="14">filament in front</text>
+    
+    <text x="150" y="25" font-family="Arial" font-size="14">Tapered design:</text>
+    <text x="150" y="45" font-family="Arial" font-size="14">Directs and slightly</text>
+    <text x="150" y="65" font-family="Arial" font-size="14">focuses the beam while</text>
+    <text x="150" y="85" font-family="Arial" font-size="14">maintaining compact size</text>
+  </g>
+</svg>
